@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-      <meta charset="utf-8">
-      <title>HTML Academy: Техномарт</title>
-      <link rel="icon" href="favicon.ico">
-      <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
-    <body>
-    <header>
-        <nav>
-            <div>
-              <label>
-                <input type="search" name="poisk" placeholder="Поиск:">
-              </label>
-              <a>
-                <!-- <img src="img/Layer 90 copy 2.png" width="220px" height="47px" alt="Логотип Техномарт"> -->
-              </a>
-            </div>
-          </nav>
-          <nav>
-            <div>
-                <a href="blank.html">Закладки</a>
-                <a href="blank.html">Корзина:10</a>
-                <a href="blank.html">Оформить заказ</a>
-            </div>
-          </nav>
-        <a href="index.html">На главную</a>
-        <nav>
-            <p>Интернет-магазин строительных материлов и инструментов для ремонта</p>
-            <a href="tel:+781255505055">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8 </p>
-            <p>Равшан Джамшутович</p>
-            <ul> 
-                <li><a href="blank.html">Мои заказы</a></li>
-                <li><a href="blank.html">Личный кабинет</a></li>
-            </ul>
-            <a href="#">Выход</a>
-            <ul>
-                <li><a href="index.html"> Главная </a></li>
-                <li><a href="blank.html"> Компания </a></li>
-                <li><a href="catalog.html"> Каталог </a></li>
-                <li><a href="blank.html"> Новости </a></li>
-                <li><a href="blank.html"> Спецпредложения </a></li>
-                <li><a href="blank.html"> Доставка </a></li>
-                <li><a href="blank.html"> Контакты </a></li>
-            </ul>
-        </nav>
-    </header>
+  <body class="page-body">
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <div>
+        <label>
+          <form action="#" method="POST">
+            <input type="search" placeholder="Поиск:">
+          </form>
+        </label>
+        <a>
+          <!-- <img src="img/Layer 90 copy 2.png" width="220px" height="47px" alt="Логотип Техномарт"> -->
+        </a>
+      </div>
+      <div>
+          <a class="navigation" href="blank.html">Закладки</a>
+          <a class="navigation" href="blank.html">Корзина</a>
+          <a class="buy navigation" href="blank.html">Оформить заказ</a>
+      </div>
+    </nav>
+      <div>
+        <p class="text-logo">Интернет-магазин строительных материлов и инструментов для ремонта</p>
+        <a class="phone" href="tel:+781255505055">+7 (812) 555-05-55</a>
+        <p class="text-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8 </p>
+      </div>
+        <div>
+          <ul>
+            <li><a class="main-logo" href="blank.html">Войти</a></li>
+            <li><a class="main-logo" href="blank.html">Регистрация</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav>
+      <div class="nav">
+        <ul>
+          <li><a class="navigation" href="index.html">Главная</a></li>
+          <li><a class="navigation" href="blank.html">Компания</a></li>
+          <li><a class="navigation" href="сatalog.html">Каталог</a></li>
+          <li><a class="navigation" href="blank.html">Новости</a></li>
+          <li><a class="navigation" href="blank.html">Спецпредложения</a></li>
+          <li><a class="navigation" href="blank.html">Доставка</a></li>
+          <li><a class="navigation" href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>  
     <main>
         <div>
             <section>
@@ -116,19 +125,19 @@
                 </div>
                 <table>
                     <tr>
-                        <td><img src="img/snippet/snippet-945 copy 2.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
-                        <td><img src="img/snippet/snippet-945 copy 2.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
+                        <td><img src="img/snippet/snippet-945.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
+                        <td><img src="img/snippet/snippet-945.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
                         <td><img src="https://via.placeholder.com/150x100" height="127" width="112" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
                     </tr>
                     <tr>
-                        <td><img src="img/snippet/snippet-18927 copy 3.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
-                        <td><img src="img/snippet/snippet-945 copy 2.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
-                        <td><img src="img/snippet/snippet-18927 copy 3.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
+                        <td><img src="img/snippet/snippet-18927.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
+                        <td><img src="img/snippet/snippet-945.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
+                        <td><img src="img/snippet/snippet-18927.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
                     </tr>
                     <tr>
-                        <td><img src="img/snippet/snippet-18927 copy 3.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
-                        <td><img src="img/snippet/snippet-945 copy 2.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
-                        <td><img src="img/snippet/snippet-18927 copy 3.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
+                        <td><img src="img/snippet/snippet-18927.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
+                        <td><img src="img/snippet/snippet-945.jpg" height="144" width="128" alt="BFG 6000">Перфоратор BOSCH BFG 6000</td>
+                        <td><img src="img/snippet/snippet-18927.jpg" height="127" width="112" alt="BFG 3000">Перфоратор BOSCH BFG 3000</td>
                     </tr>
                 </table>
                 <div>
@@ -146,33 +155,45 @@
                 В ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <nav>
+          <ul>
+            <li><a class="nav-footer" href="blank.html">Компания</a></li>
+            <li><a class="nav-footer" href="blank.html">Новости</a></li> 
+            <li><a class="nav-footer" href="catalog.html">Каталог</a></li>
+            <li><a class="nav-footer" href="blank.html">Доставка</a></li>
+            <li><a class="nav-footer" href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <div>
             <ul>
-              <li>Компания</li>
-              <li>Новости</li> 
-              <li>Каталог</li>
-              <li>Доставка</li>
-              <li>Контакты</li>
+              <li><a class="store" href="blank.html">Материалы</a></li>
+              <li><a class="store" href="blank.html">Техника</a></li>
+              <li><a class="store" href="blank.html">Инструмент</a></li>
+              <li><a class="store" href="blank.html">Спецпредложения</a></li>
             </ul>
-          </nav>
+          </div>
+        </nav>
+        <div class="secondary-main">
           <p>
             г. Санкт-Петербург,ул. Б. Конюшенная, д.19/8<br>
           </p>
           <a href="blank.html">Вк</a>
           <a href="blank.html">Фейсбук</a>
           <a href="blank.html">Инста</a><br>
-          <p>Обратная связь:
-          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="nav-info">Обратная связь:
+          <a class="url" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p>Разработано -
-          <a href="htmlacademy.ru">htmlacademy.ru</a> 
+          <p class="nav-info">Разработано -
+          <a class="url" href="htmlacademy.ru">htmlacademy.ru</a> 
           </p>
           <p>
             &copy; 2010-2019 Компания &laquo;Техномарт&raquo; <br> 
             Все права защищены
           </p>
-    </footer>
+        </div>
+      </footer>
     <section>
         <h2>Товар добавлен в корзину</h2>
         <div>
