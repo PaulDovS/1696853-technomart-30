@@ -5,8 +5,8 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -31,7 +31,7 @@
         </ul>
       </div>
     </nav>
-    <nav>
+    <nav class="">
       <div>
         <p class="text-logo">Интернет-магазин строительных материлов и инструментов для ремонта</p>
         <a class="contacts-phone" href="tel:+781255505055">+7 (812) 555-05-55</a>
@@ -41,7 +41,7 @@
           <ul>
             <li>
               <a class="login-link" href="blank.html">
-                <img src="img/icon-login.svg" width="20" height="17" alt="icon-login"> Войти
+                <img src="img/icon-login.png" width="20" height="17" alt="icon-login"> Войти
               </a></li>
             <li><a class="login-link" href="blank.html">Регистрация</a></li>
           </ul>
@@ -72,45 +72,51 @@
         <li>
           <img src="img/Layer99.jpg" width="620" height="266" alt="Мужчина с перфоратором на стройке">
           <!-- <img src="img/Layer991.jpg" width="620" height="266" alt="Мужчина с дрелью в руках"> -->
-          <a href="blank.html">открыть каталог</a> <span>ПЕРФОРАТОРЫ</span>
+          <a href="blank.html" class="nev">открыть каталог</a> <span>ПЕРФОРАТОРЫ</span>
         </li>
       </ul> 
     </div>
     <section>
-      <h2><span class="text-2">Популярные товары</span></h2>
+      <h2 class="text-2">Популярные товары</h2>
       <a class="button popular-botton " href="blank.html"><span class="">все популярные товары</span></a>
       <!-- <img src="img/price/btn copy 19.svg" alt="Популярые товары"> -->
     </section>
     <div>
-        <ul>
-          <li><img src="img/snippet/snippet-32961.jpg" width="184" height="164" alt="BFG 9000"></li>
-          <li><span class="product-name">Перфоратор BOSCH BFG 9000</span></li>
-          <li><span class="price">32500 Р.</span></li>
-          <li><img src="img/price/Shape.svg" alt="red-box"><span class="discount">25500</span></li>
-        </ul>
-        <ul>
-          <li><img src="img/snippet/snippet-18927.jpg" width="127" height="112" alt="BFG 3000"></li>
-          <li><span class="product-name">Перфоратор BOSCH BFG 3000</span></li>
-          <li><span class="price">22500 Р.</span></li>
-          <li><img src="img/price/Shape.svg" alt="red-box"><span class="discount">15500</span></li>
-        </ul>
-        <ul>
-          <li><img src="img/snippet/snippet-945.jpg" width="144" height="128" alt="BFG 6000"></li>
-          <li><span class="product-name">Перфоратор BOSCH BFG 6000</span></li>
-          <li><span class="price">30500 Р.</span></li>
-          <li><img src="img/price/Shape.svg" alt="red-box"><span class="discount">25500</span></li>
-        </ul>
-
-        <ul>
-          <li><img src="img/snippet/snippet-18927.jpg" width="127" height="112" alt="BFG 2000"></li>
-          <li><span class="product-name">Перфоратор BOSCH BFG 2000</span></li>
-          <li><span class="price">22500 Р.</span></li>
-          <li><img src="img/price/Shape.svg" alt="red-box"><span class="discount">15500</span></li>
-        </ul>
-
+      <ul class="product">
+        <li><img src="img/snippet/snippet-32961.jpg" width="184" height="164" alt="BFG 9000"></li>
+        <li><span class="product-name">Перфоратор BOSCH BFG 9000</span></li>
+        <li><span class="price">32500 Р.</span></li>
+        <li><svg width="141" height="38" viewBox="0 0 141 38" fill="none"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
+          </svg><span class="discount">25500</span></li>
+      </ul>
+      <ul class="product">
+        <li><img src="img/snippet/snippet-18927.jpg" width="127" height="112" alt="BFG 3000"></li>
+        <li><span class="product-name">Перфоратор BOSCH BFG 3000</span></li>
+        <li><span class="price">22500 Р.</span></li>
+        <li><svg width="141" height="38" viewBox="0 0 141 38" fill="none"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
+          </svg><span class="discount">15500</span></li>
+      </ul>
+      <ul class="product">
+        <li><img src="img/snippet/snippet-945.jpg" width="144" height="128" alt="BFG 6000"></li>
+        <li><span class="product-name">Перфоратор BOSCH BFG 6000</span></li>
+        <li><span class="price">30500 Р.</span></li>
+        <li><svg width="141" height="38" viewBox="0 0 141 38" fill="none"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
+          </svg><span class="discount">25500</span></li>
+      </ul>
+      <ul class="product">
+        <li><img src="img/snippet/snippet-18927.jpg" width="127" height="112" alt="BFG 2000"></li>
+        <li><span class="product-name">Перфоратор BOSCH BFG 2000</span></li>
+        <li><span class="price">22500 Р.</span></li>
+        <li><svg width="141" height="38" viewBox="0 0 141 38" fill="none"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z" fill="#EE3643"/>
+          </svg><span class="discount">15500</span></li>
+      </ul>
     </div>
     <section>
-      <h2><span class="text-2">Популярные  производители</span></h2>
+      <h2 class="text-2">Популярные  производители</h2>
       <a class="button popular-botton" href="blank.html">Все производители</a>
       <!-- <img src="img/price/btn copy 19.svg" alt="Популярые товары"> -->
     </section>
@@ -127,7 +133,7 @@
         </ul>
       </div>
     <section>
-      <h2>Сервисы</h2>
+      <h2 class="text-2">Сервисы</h2>
     </section>
       <div>  
         <p class="text">Хороший Интернет-магазин отличается от плохого не только ценами!<br>
@@ -148,7 +154,7 @@
       </section>
     <div>
       <section>
-        <h2>Компания"Техномарт"</h2>
+        <h2 class="text-2">Компания"Техномарт"</h2>
         <p class="text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремнота и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p class="text">Мы  можем доставить ваш товар в самые отдельные точки России!<br>
         Техномарт работает со многими транспортынми компаниями:</p>
@@ -164,7 +170,7 @@
     </div>
     <div>
       <section>
-        <h2>Контакты</h2>
+        <h2 class="text-2">Контакты</h2>
         <p class="text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <button class="button" type="button">Заблудились? Напишите нам!</button>
       </section>
@@ -175,7 +181,7 @@
       <ul>
         <li><a class="navigation" href="blank.html">Компания</a></li>
         <li><a class="navigation" href="blank.html">Новости</a></li> 
-        <li><a class="navigation" href="catalog.html">Каталог</a></li>
+        <li><a class="navigation" href="сatalog.html">Каталог</a></li>
         <li><a class="navigation" href="blank.html">Доставка</a></li>
         <li><a class="navigation" href="blank.html">Контакты</a></li>
       </ul>

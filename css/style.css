@@ -48,6 +48,8 @@ body {
     font-family: 'Cuprum', sans-serif;
     background-color: var(--basic-white);
     text-decoration: none;
+    /* list-style: none; */
+    text-decoration: none;
 }
 
 ul {
@@ -64,10 +66,20 @@ ul {
     line-height: 24px;
 }
 
+.navigation:hover,
+.navigation:focus {
+    background-color: var(--dark-blue);
+}
+.navigation:active {
+    background-color: var(--more-darken-blue);
+}
+
+
 .nav {
     background-color: var(--darken-blue);
 
 }
+
 
 .main-header {
     background-color: var(--basic-background);
@@ -97,6 +109,33 @@ ul {
     width: 49px;
     text-align: center;
 }
+
+.login-link:hover,
+.login-link:focus {
+    color: var(--bright-red);
+}
+.login-link:active {
+    color: var(--basic-greylight);
+}
+
+.logo-url {
+    text-decoration: none;
+    font-family: var(--cuprum);
+    font-size: 16px;
+    line-height: 18px; 
+    color: var(--darken-blue-rgb);
+ }
+
+ .logo-url:active,
+ .logo-url:focus {
+    color: var(--basic-greylight);
+ }
+
+ .logo-url:hover {
+    color: red;
+ }
+
+
 
 .buy{
     background-color: var(--dark-green);
@@ -130,20 +169,33 @@ ul {
 /* info */
 /* item-list */
 .items {
-    font-family: 'Cuprum', sans-serif;
-    color: var(--basic-white);    
+    font-family: 'Cuprum', sans-serif;   
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     text-decoration: none;
-    width: 400px;
+    font-weight: 400;
+    /* background-color: rgba(255, 255, 255, 1); */
+    mix-blend-mode: normal;
+    color: var(--basic-white);     
+    /* opacity: 30%; */
+    text-transform: uppercase;
 }
+
+.items:hover,
+.items:focus{
+    background-color: var(--basic-greylight);
+}
+.items:active {
+    background-color: var(--grey-rgb);
+}
+
 
 
 .headline {
     font-size: 24px;
     font-family: var(--cuprum);
-    width: 700px;
+    font-weight: 700;
     line-height: 30px;
 }
 
@@ -151,8 +203,6 @@ ul {
     background-color: var(--orange);
     color: var(--basic-white);
     width: 300px; 
-
-    /* height: 123px; */
 }
 
 .item-bright-cyan {
@@ -192,13 +242,19 @@ ul {
     font-size: 18px;
 }
 
+.product {
+    background-color: var(--basic-background);
+}
+
 .text {
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
-
+.discount{
+    /* color: rgba(255, 255, 255, 1); */
+}
 
 /* button */
 .popular-botton {
@@ -219,7 +275,9 @@ ul {
 }
 
 .button:hover,
-.button:focus,
+.button:focus {
+    background-color: var(--strong-red);
+}
 .button:active {
   background-color: var(--more-strong-red);
 }
@@ -228,8 +286,26 @@ ul {
     display: flex;
 }
 
+
+.nev {
+    background-color: var(--bright-red);
+    text-decoration-line: none;
+    color: var(--basic-white);
+}
+
+.nev:hover,
+.nev:focus {
+    background-color: var(--strong-red);
+}
+
+
+.nev:active {
+    background-color: var(--more-strong-red);
+}
+
+
 .text-2 {
-    font-family: 'Cuprum', sans-serif;
+    font-weight: 400;
     font-size: 30px;
     line-height: 30px;
 }
@@ -237,6 +313,72 @@ ul {
 .feedback {
     font-family: var(--cuprum);
     font-size: 18px;
-    width: 400px;
+    font-weight: 400;
     line-height: 24px;
+}
+
+/* catalog */
+
+.name {
+    background-color: var(--basic-background);
+    font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    line-height: 30px;   
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+    font-family: var(--ptsans);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+/* sorting */
+
+.sorting {
+    font-size: 13px;
+    font-family: var(--ptsans);
+    line-height: 18px;
+    color: var(--basic-black-rgb);
+}
+
+
+.sorting:hover,
+.sorting:active {
+    color: var(--bright-red)
+}
+.sorting:focus {
+    color: var(--basic-grey);
+}
+
+
+
+/* pagination */
+
+.pagination {
+    /* list-style-type: none; */
+    text-decoration: none;
+    font-family: var(--ptsans);
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--basic-black-rgb);
+    border:  1px solid #e5e5e5;
+
+}
+
+.pagination:hover,
+.pagination:active,
+.pagination:focus {
+    border: 1px solid #EE3643;
 }
